@@ -139,12 +139,12 @@
             </template>
             <li v-show="showNoResults && (filteredOptions.length === 0 && search && !loading)">
               <span class="multiselect__option">
-                <slot name="noResult" :search="search">No elements found. Consider changing the search query.</slot>
+                <slot name="noResult" :search="search">Нет совпадений.</slot>
               </span>
             </li>
             <li v-show="showNoOptions && (options.length === 0 && !search && !loading)">
               <span class="multiselect__option">
-                <slot name="noOptions">List is empty.</slot>
+                <slot name="noOptions">Список пуст</slot>
               </span>
             </li>
             <slot name="afterList"></slot>
